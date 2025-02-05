@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/kevencb/QR-code-component)
-- Live Site URL: [Development](https://kevencb.github.io/QR-code-component/)
+- Solution URL: [Github](https://github.com/kevencb/blog-preview-card-component)
+- Live Site URL: [Development](https://kevencb.github.io/blog-preview-card-component/)
 
 ## My process
 
