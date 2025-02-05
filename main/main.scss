@@ -1,0 +1,124 @@
+@import "base.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    a{
+        transition: all ease-in-out 300ms;
+    }
+    a:hover{
+        color: $yellow;
+    }
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: $yellow;
+    font-family: 'Figtree';
+    font-size: 500;
+    font-size: 1.4rem;
+    color: $gray_950;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 6rem);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card-blog{
+        width: 85%;
+        max-width: 38.4rem;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding: 2.4rem;
+        border-radius: 2rem;
+        border: 1px solid $gray_950;
+        box-shadow: .8rem .8rem 0 $gray_950;
+        &__cover{
+            img{
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            &__tag{
+                align-self: flex-start;
+                background-color: $yellow;
+                padding: .4rem 1.2rem;
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $gray_950;
+                font-weight: 800;
+                line-height: 150%;
+                border-radius: .4rem;
+                @media (width >= 768px) {
+                    font-size: 1.4rem;
+                }
+            }
+            &__date{
+                font-size: 1.2rem;
+                color: $gray_950;
+                line-height: 150%;
+                @media (width >= 768px) {
+                    font-size: 1.4rem;
+                }
+            }
+            &__title{
+                font-size: 2rem;
+                color: $gray_950;
+                line-height: 150%;
+                @media (width >= 768px) {
+                    font-size: 2.4rem;
+                }
+                a{
+                    color: $gray_950;
+                }
+                a:hover{
+                    color: $yellow;
+                }
+            }
+            &__paragraph{
+                color: $gray_500;
+                line-height: 150%;
+                @media (width >= 768px) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .card-footer{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 800;   
+            &__img{
+                width: 3.2rem;
+                display: block;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 11px; 
+    text-align: center;
+    a { 
+        color: $gray_950;
+        font-weight: 700;
+    }
+}
